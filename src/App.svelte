@@ -28,8 +28,9 @@
   }
 </script>
 
-<h1>Camera app web2lab5</h1>
+<h1 class="font-bold">Camera app web2lab5</h1>
 
+<!-- Bind the input element to the fileInput variable -->
 <input
   type="file"
   accept="image/*"
@@ -39,23 +40,12 @@
 />
 <button on:click={submitImage}>Submit</button>
 
+<!-- Display each submitted image -->
 {#each $images as image, index (index)}
-  <img src={image} alt={`User submitted image ${index}`} />
+  <img
+    src={image}
+    alt="User submitted image {index}"
+    height="500"
+    width="500"
+  />
 {/each}
-
-<style>
-  h1,
-  input,
-  button,
-  img {
-    display: block; /* Makes each element a block-level element */
-    width: 100%; /* Each element takes the full width */
-    margin-bottom: 10px; /* Adds some space below each element */
-  }
-
-  img {
-    height: 400px; /* Fixed height for images */
-    width: 400px; /* Fixed width for images */
-    object-fit: cover; /* Ensures the images are nicely cropped to fit the box */
-  }
-</style>
