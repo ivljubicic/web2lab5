@@ -42,5 +42,10 @@
 
 <!-- Display each submitted image -->
 {#each $images as image, index (index)}
-  <img src={image} alt="User submitted image {index}" />
+  <img
+    src={image}
+    alt="User submitted image {index}"
+    height="500"
+    width="500"
+  />
 {/each}
