@@ -1,22 +1,21 @@
 {
-    "name": "Image Capture PWA",
-    "short_name": "CapturePWA",
-    "description": "A simple PWA to capture images from your camera and show them",
+    "name": "Web2Lab5 ILJ",
+    "short_name": "Web2Lab5 PWA",
+    "description": "This is a simple application showcasing the use of PWA, ILJ",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#eeeeee",
     "icons": [
       {
-        "src": "./camera.png",
+        "src": "./static/camera_small.png",
         "sizes": "192x192",
         "type": "image/png"
       },
       {
-        "src": "./camera.png",
+        "src": "./static/camera.png",
         "sizes": "512x512",
-        "type": "image/png",
-        "purpose": "any maskable"
+        "type": "image/png"
       }
     ]
   }
